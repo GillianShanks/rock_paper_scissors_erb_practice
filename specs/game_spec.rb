@@ -1,5 +1,5 @@
 require('minitest/autorun')
-require('minitest-rg')
+require('minitest/rg')
 require_relative('../models/game.rb')
 
 class GameTest < Minitest::Test
@@ -8,8 +8,8 @@ class GameTest < Minitest::Test
     @game = Game.new()
   end
 
-  def test_play_rock_paper()
-    assert_equal('rock', @game.play(rock, paper))
+  def test_play__rock_paper()
+    assert_equal("paper", @game.play("rock", "paper"))
   end
 
 end
