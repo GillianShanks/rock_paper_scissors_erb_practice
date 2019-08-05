@@ -1,0 +1,66 @@
+a, h1, h3, p, ul {
+  font-family: cursive;
+}
+a{
+  color: lavenderblush;
+  font-size: 1.3em;
+}
+h1{
+  font-size: 2.5em;
+}
+
+h2{
+  font-size: 4em;
+}
+
+h3{
+  font-size:2em;
+}
+
+h1, h2{
+  color: lightsteelblue;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+p, ul{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+.background{
+  background: url(http://awesomelyamazing.com/What-a-Wonderful-World/wp-content/uploads/2014/05/Purple-Mountains.jpg) center;
+  /* opacity: 0.5; */
+}
+/*
+body{
+  background-color: lavenderblush;
+  opacity: 0.2;
+} */
+
+
+.text{
+  text-decoration: none;
+
+}
+
+.list{
+  text-align: left;
+}
+
+.box{
+  background-color: rgb(166, 107, 243, 0.8);
+  height: 30em;
+  width:50%;
+  margin: auto;
+  /* positon: relative; */
+
+}
+
+.text{
+  padding: 0.2em;
+  text-align: center;
+  /* position: absolute; */
+
+}
