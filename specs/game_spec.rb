@@ -12,4 +12,17 @@ class GameTest < Minitest::Test
     assert_equal("paper", @game.play("rock", "paper"))
   end
 
+  def test_play__scissors_paper()
+    assert_equal("scissors", @game.play("scissors", "paper"))
+  end
+
+  def test_play__scissors_rock()
+    assert_equal("rock", @game.play("scissors", "rock"))
+  end
+
+  def test_play__paper_rock()
+    assert_equal("paper", @game.play("paper", "rock"))
+  end
+
+  
 end
