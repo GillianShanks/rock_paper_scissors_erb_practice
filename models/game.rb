@@ -3,27 +3,27 @@ class Game
   def self.play (hand1, hand2)
 
     if hand1 == hand2
-      return "No one"
+      return "a draw"
     elsif hand1 == "rock"
       case
       when hand2 == "scissors"
-        return "Rock"
+        return hand1
       when hand2 == "paper"
-        return "Paper"
+        return hand2
       end
     elsif hand1 == "scissors"
       case
       when hand2 == "rock"
-        return "Rock"
+        return hand2
       when hand2 == "paper"
-        return "Scissors"
+        return hand1
       end
     elsif hand1 == "paper"
       case
       when hand2 == "rock"
-        return "Paper"
+        return hand1
       when hand2 == "scissors"
-        return "Scissors"
+        return hand2
       end
     end
 

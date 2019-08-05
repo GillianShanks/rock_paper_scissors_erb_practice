@@ -1,6 +1,11 @@
 <div class='box'>
   <div class='text'>
-  <h2 class='win'> <%= @result %> wins! </h2>
+  <h2 class='win'>
+    <%= "Everyone" if @result=="a draw"%>
+    <%= "Player 1" if params[:hand1]==@result %>
+    <%= "Player 2" if params[:hand2]==@result %>
+
+  wins with <%= @result%>! </h2>
 
   <p><a href="/welcome">Click here for the rules!</a></p>
   </div>
