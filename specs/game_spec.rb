@@ -24,5 +24,8 @@ class GameTest < Minitest::Test
     assert_equal("paper", @game.play("paper", "rock"))
   end
 
-  
+  def test_play__rock_rock()
+    assert_equal("draw", @game.play("rock", "rock"))
+  end
+
 end

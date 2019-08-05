@@ -1,7 +1,10 @@
 class Game
 
   def play (hand1, hand2)
-    if hand1 == "rock"
+
+    if hand1 == hand2
+      return "draw"
+    elsif hand1 == "rock"
       case
       when hand2 == "scissors"
         return "rock"
@@ -22,9 +25,6 @@ class Game
       when hand2 == "scissors"
         return "scissors"
       end
-    elsif hand1 == hand2
-      return "draw"
-
     end
 
 
